@@ -37,7 +37,7 @@ ml-apprentice-takehome/
 | 3    | `analysis.md`               | Discussion of training strategies |
 | 4    | `task4_training_loop.py`     | Loss decreasing across epochs |
 
-
+Check the Ouput in my terminal running docker image:
  ![OUTPUT](result.png)
 
 
@@ -62,14 +62,14 @@ python train.py  # Optional combined loop
 
 ---
 
-## 🐳 Docker Setup (Bonus)
+## Docker Setup (Bonus)
 
 ### 1. Build the Image
 ```bash
 docker build -t ml_apprentice .
 ```
 
-### 2. ▶ Run Each Task
+### 2. Run Each Task
 
 ```bash
 docker run ml_apprentice python task1_sentence_embedding.py
@@ -96,4 +96,3 @@ docker run ml_apprentice  # runs train.py by default
 Shubham Vyas   
 vyasshubham.41@gmail.com
 
-```
