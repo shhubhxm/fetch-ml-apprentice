@@ -51,7 +51,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### ▶ Run Tasks Locally:
+### Run Tasks Locally:
 
 ```bash
 python task1_sentence_embedding.py
