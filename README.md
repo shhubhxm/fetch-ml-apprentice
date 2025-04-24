@@ -11,7 +11,7 @@ All tasks are implemented in PyTorch using HuggingFace Transformers and can be r
 ## Directory Structure
 
 ```
-ml-apprentice-takehome/
+fetch-ml-apprentice/
 ├── models/
 │   └── multitask_model.py           # Core SentenceTransformer + MTL wrapper
 ├── data/
