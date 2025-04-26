@@ -35,6 +35,6 @@ This approach maintains the general understanding of language while adapting the
 
 ## Final Thoughts
 
-- Our model showed clear learning across tasks with decreasing loss values, confirming the effectiveness of this setup.
+- My model showed clear learning across tasks with decreasing loss values, confirming the effectiveness of this setup.
 - Multi-task learning proved beneficial even with synthetic data Task B had strong signal propagation from Task A's shared embeddings.
 - The architecture is modular, easily extendable to more tasks or domains.
