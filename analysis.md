@@ -7,7 +7,7 @@
 - **Implication:** 
   - Fast training, fewer parameters.
   - Limited task-specific learning capacity.
-  - Not ideal for our multi-task case — both Task A and Task B benefit from representation tuning.
+  - Not ideal for our multi-task case both Task A and Task B benefit from representation tuning.
 
 ### 2. Freeze Only Transformer Backbone
 - **Use case:** When the backbone is pre-trained on a large corpus and we're dealing with relatively simple tasks (e.g., sentiment analysis).
@@ -23,7 +23,7 @@
 ## Transfer Learning Strategy
 
 ### Pretrained Model
-We used `distilbert-base-uncased`, a lighter version of BERT ideal for fast experimentation. In a production setting, something like `all-MiniLM-L6-v2` or `roberta-base` could offer better results.
+I used `distilbert-base-uncased`, a lighter version of BERT ideal for fast experimentation. In a production setting, something like `all-MiniLM-L6-v2` or `roberta-base` could offer better results.
 
 ### Freezing Strategy
 - **Frozen:** Early transformer layers (which capture syntactic structure and general semantics)
@@ -36,5 +36,5 @@ This approach maintains the general understanding of language while adapting the
 ## Final Thoughts
 
 - Our model showed clear learning across tasks with decreasing loss values, confirming the effectiveness of this setup.
-- Multi-task learning proved beneficial even with synthetic data — Task B had strong signal propagation from Task A's shared embeddings.
+- Multi-task learning proved beneficial even with synthetic data Task B had strong signal propagation from Task A's shared embeddings.
 - The architecture is modular, easily extendable to more tasks or domains.
